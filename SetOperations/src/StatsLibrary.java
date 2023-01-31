@@ -29,7 +29,7 @@ public class StatsLibrary
 		}
 		return median;
 	}
-	public double mode(ArrayList<Integer> a)
+	public Double mode(ArrayList<Integer> a)
 	{
 		double mode = 0;
 		int tally = 0;
@@ -51,10 +51,16 @@ public class StatsLibrary
 				//Tgus us a kut
 			}
 		}
-		
-		
-		
 		return mode;
+	}
+	public double standardDeviation(ArrayList<Integer> a)
+	{
+		double placeholder = 0;
+		for(int i = 0; i<a.size();i++)
+		{
+			placeholder += Math.pow(a.get(i) -  mean(a), 2);
+		}
+		return Math.sqrt(placeholder/a.size());
 	}
 	
 	

@@ -7,7 +7,17 @@ public class tester
 	public static void main(String[] args)
 	{
 		//testStatLib();
-		testProject1();
+		//testProject1();
+		testSD();
+	}
+	public static void testSD()
+	{
+		StatsLibrary statlib = new StatsLibrary();
+		ArrayList<Integer> A = new ArrayList<Integer>();
+		Collections.addAll(A, 1, 3, 3, 3, 3, 5, 6, 7);
+		//statlib.standardDeviation(A);
+		System.out.print(statlib.standardDeviation(A));
+		
 	}
 	public static void testStatLib() 
 	{
