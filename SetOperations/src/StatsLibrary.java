@@ -48,7 +48,7 @@ public class StatsLibrary
 				//B.get(i.get()).add(tally);
 				tally = 0;
 				//System.out.println(commonalityRecorder);
-				
+				//Tgus us a kut
 			}
 		}
 		
