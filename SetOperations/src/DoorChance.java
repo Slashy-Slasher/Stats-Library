@@ -16,32 +16,55 @@ public class DoorChance
 		int[] case2 = {0, 1, 0};
 		int[] case3 = {0, 0, 1};
 		double[] caseCounts = {0, 0, 0};
+		int[] doorChosen = {0,0,0};
+
 	
 		boolean gameState = true;
 		boolean testCase = true;
 		
 		while(gameState)
 		{
-			init(arr);
+			init(arr, doorChosen);
 			randomizeDoors(arr);
 			caseTicker(arr, case1, case2, case3, caseCounts);
-
+			//printArr(arr);
+			
+			runGame(arr, doorChosen);
 			runCount++;
-			if(runCount == 1000000 && testCase)
+			if(runCount == 100000000 && testCase)
 				gameState = false;
 		}
 		
 		
-		runTimeStats(runCount, caseCounts);
+		runTimeStats(runCount, doorChosen, caseCounts);
 	}
-	public void init(int [] arr) {
-		for(int i = 0; i<arr.length-1; i++) {
+	public void init(int [] arr, int[] doorChosen) {
+		for(int i = 0; i<arr.length; i++) {
 			arr[i] = 0;
+			doorChosen[i] = 0;
 		}
 	}
-	public static void runTimeStats(int runCount, double[] caseCounts)
+	public void runGame(int[] arr, int[] doorChosen)
+	{
+		//pick door(random)
+		//Unveil a non car door
+		// either pick a new or don't
+		//record stats and place them in run time stats method
+		
+		randomizeDoors(doorChosen);
+		
+		
+		
+		
+	}
+
+	public void runTimeStats(int runCount, int[] doorChosen, double[] caseCounts)
 	{
 		System.out.println("Number of time looped: " + runCount);
+		System.out.println("Percentage of Case 1's: " + (double)(caseCounts[0]/runCount));
+		System.out.println("Percentage of Case 2's: " + (double)(caseCounts[1]/runCount));
+		System.out.println("Percentage of Case 3's: " + (double)(caseCounts[2]/runCount));
+		
 		System.out.println("Percentage of Case 1's: " + (double)(caseCounts[0]/runCount));
 		System.out.println("Percentage of Case 2's: " + (double)(caseCounts[1]/runCount));
 		System.out.println("Percentage of Case 3's: " + (double)(caseCounts[2]/runCount));
@@ -78,9 +101,9 @@ public class DoorChance
 			arr[2] = 1;
 			//System.out.println(random + " is greater than " + .0 + " and less than .33 and .66");
 			random = -1;
-
 		}
 	}
+	
 	public void printArr(int[] arr){
 		for(int i = 0; i< arr.length; i++)
 		{
