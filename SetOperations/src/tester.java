@@ -10,8 +10,9 @@ public class tester
 	{
 		//testStatLib();
 		//testProject1();
-		testSD();
+		//testSD();
 	}
+	/*
 	public static void testSD()
 	{
 		StatsLibrary statlib = new StatsLibrary();
@@ -78,5 +79,5 @@ public class tester
 		
 		//project1.union(S, A);
 	}
-	
+	*/
 }
