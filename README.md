@@ -2,28 +2,28 @@
 A library of statistics algorithms for the 2023 spring semester
 
 
-Contians:
+Contains:
 
-  Stats-Lib:
+    Stats-Lib:
   
-    Mean, Median, Mode, operations for Arraylists
+        Mean, Median, Mode, operations for Arraylists
     
-    Standard Deviation of a set
+        Standard Deviation of a set
   
-    Combinations and Permutations(Lost?)
+        Combinations and Permutations(Lost?)
     
-  Set-Operations:
+    Set-Operations:
   
-     Union, Intersection, Compliment for Arraylists
+        Union, Intersection, Compliment for Arraylists
      
-     Sort and Trim method:
+        Sort and Trim method:
      
-  Birthday:
+    Birthday:
   
-     Odds of a group having a similar birthday simulation
+      Odds of a group having a similar birthday simulation
      
-   DoorGame:
+    DoorGame:
    
-      Monte Hall problem simulation
+        Monte Hall problem simulation
 
 
