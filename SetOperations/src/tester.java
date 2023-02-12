@@ -1,3 +1,5 @@
+package src;
+
 import java.util.*; // import the ArrayList class
 
 public class tester 
