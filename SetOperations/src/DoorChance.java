@@ -1,3 +1,12 @@
+/**
+ * This class is used to simulate the famous Monte Hall problem that was present on the game show
+ * "Lets make a deal", the goal is to show that if you always switch your door when given the chance
+ * that you odds of winning will be much higher than if you were to remain with your previous choice.
+ *
+ *
+ * @author Alexander Mortillite
+ */
+
 import java.util.Random;
 
 public class DoorChance 
