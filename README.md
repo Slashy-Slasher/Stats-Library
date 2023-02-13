@@ -2,17 +2,17 @@
 A library of statistics algorithms for the 2023 spring semester
 
 
-Contains:
-
-   -**Stats-Lib:**
-  
-        Mean, Median, Mode, operations for Arraylists
+   Contains:
+   
+      **Stats-Lib:**
+   
+         Mean, Median, Mode, operations for Arraylists
     
-        Standard Deviation of a set
+         Standard Deviation of a set
   
-        Combinations and Permutations(Lost?)
+         Combinations and Permutations(Lost?)
     
-   -**Set-Operations:**
+   **Set-Operations:**
   
         Union, Intersection, Compliment for Arraylists
      
