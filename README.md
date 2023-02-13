@@ -4,7 +4,7 @@ A library of statistics algorithms for the 2023 spring semester
 
 Contains:
 
-   **Stats-Lib:**
+   -**Stats-Lib:**
   
         Mean, Median, Mode, operations for Arraylists
     
@@ -12,7 +12,7 @@ Contains:
   
         Combinations and Permutations(Lost?)
     
-   **Set-Operations:**
+   -**Set-Operations:**
   
         Union, Intersection, Compliment for Arraylists
      
