@@ -1,10 +1,7 @@
 # Stats-Library
 A library of statistics algorithms for the 2023 spring semester
-
-
-   Contains:
    
-      **Stats-Lib:**
+  **Stats-Lib:**
    
          Mean, Median, Mode, operations for Arraylists
     
