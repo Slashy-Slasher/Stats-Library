@@ -22,17 +22,23 @@ public class Birthday
 
         System.out.println(((double)count/(double)timesRan)*100 +"%"); // Print the percentage
     }
+
+    /**
+     *
+     * @param classSize Size of the class of people
+     * @return This return is used as a singal
+     */
     public boolean testLoop(int classSize)
     {
-        boolean count = false;
+        boolean match = false;
         ArrayList<Person> classroom = new ArrayList<>();
         for(int i = 0; i<classSize; i++)
             classroom.add(new Person());
 
         if(hasBirthday(classroom))
-            count = true;
+            match = true;
 
-        return count;
+        return match;
     }
 
     public boolean hasBirthday(ArrayList<Person> classroom)
